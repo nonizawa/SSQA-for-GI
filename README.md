@@ -6,14 +6,6 @@ SSQA-for-GI is a Python project that utilizes Stochastic Simulated Quantum Annel
 
 This repository contains an implementation of the SSQA algorithm to tackle the GI problem as described in the research paper ["Stochastic Quantum Monte Carlo Algorithm for Large-Scale Combinatorial Optimization Problems"](https://arxiv.org/abs/2302.12454).
 
-## Table of Contents
-1. [Installation](#installation)
-2. [Run](#single)
-3. [Structure](#structure)
-4. [License](#license)
-5. [Contact](#contact)
-6. [Citation](#citation)
-
 ## Installation
 
 ### Prerequisites
@@ -57,10 +49,6 @@ Here ia the options.
 - `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
 - `common.py`: This is used for sa.py 
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contact
 
 For any questions, issues, or inquiries, feel free to create an issue in the repository or contact the repository owner [@nonizawa](https://github.com/nonizawa).
@@ -90,3 +78,7 @@ Here is a bibtex for the code.
     howpublished = {\url{https://github.com/nonizawa/SSQA-for-GI}}
 }
 ```
+
+## License
+
+This project is licensed under the MIT License.
