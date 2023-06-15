@@ -2,9 +2,9 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-SSQA-for-GI is a Python project that utilizes Stochastic Simulated Quantum Annelinag (SSQA) for Graph Isomorphism (GI) tasks. The project aims to develop a robust algorithm to assess the quality of synthesizers, by evaluating their performance in solving Graph Isomorphism problems.
+SSQA-for-GI is a Python project that utilizes Stochastic Simulated Quantum Annelinag (SSQA) for Graph Isomorphism (GI) tasks. The project aims to develop a robust algorithm to assess the quality, by evaluating their performance in solving Graph Isomorphism problems. The GI problem is a classical computational problem in which two given graphs, G and H, are determined to be isomorphic if there exists a bijective mapping between their vertex sets that preserves adjacency.
 
-The Graph Isomorphism problem is a classical computational problem in which two given graphs, G and H, are determined to be isomorphic if there exists a bijective mapping between their vertex sets that preserves adjacency.
+This repository contains an implementation of the SSQA algorithm to tackle the GI problem as described in the research paper ["Stochastic Quantum Monte Carlo Algorithm for Large-Scale Combinatorial Optimization Problems"](https://arxiv.org/abs/2302.12454).
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -64,7 +64,6 @@ This project is licensed under the MIT License.
 ## Contact
 
 For any questions, issues, or inquiries, feel free to create an issue in the repository or contact the repository owner [@nonizawa](https://github.com/nonizawa).
-
 
 ## Citation
 
