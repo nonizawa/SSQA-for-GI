@@ -24,7 +24,7 @@ cd SSQA-for-GI
 - `sa.py`: This is the main Python script that runs the SA for GI algorithm.
 - `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
 - `./graph/`: This directory contains the dataset of graphs used for evaluation.
-- `GI_p50_dataset.mat`" This is dataset of GI problems where edges between nodes exist with 50\%.
+- `GI_p50_dataset.mat`: This is dataset of GI problems where edges between nodes exist with 50\%.
 
 ## Run
 
@@ -39,17 +39,17 @@ python sa.py --N 5 --Mcycle 1000 --trial 100 --T_ini 1000 --T_end 0.1 -tau 1
 
 Here ia the options.
 
---N: Number of nodes in a GI problem
+- `--N`: Number of nodes in a GI problem
 
---Mcycle: Number of cycles for 1 trial
+- `--Mcycle`: Number of cycles for 1 trial
 
---trial: Number of trials to evaluate the performance on average
+- `--trial`: Number of trials to evaluate the performance on average
 
---T_ini:  A pseudo temperature starts at T_ini
+- `--T_ini`:  A pseudo temperature starts at T_ini
 
---T_min: A pseudo temperature ends at T_ini
+- `--T_min`: A pseudo temperature ends at T_ini
 
---tau:  A pseudo temperature is decreased every tau cycle
+- `--tau`:  A pseudo temperature is decreased every tau cycle
 
 You can see the simulation results in terminal, such as mean simulation time and accuracy. For example:
 ![Accuracy and simulation time](images/terminal.png)
