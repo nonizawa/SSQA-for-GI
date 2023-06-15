@@ -73,13 +73,12 @@ If you use this code in your research, please cite the original paper:
 Here is a bibtex for the code.
 ```bibtex
 @misc{nonizawa_SSQAforGI,
-    author = {Naoya Onizawa,
-    title = {SSQA-for-GI},
-    year = {2023},
-    publisher = {GitHub},
-    journal = {GitHub Repository},
-    howpublished = {\url{https://github.com/nonizawa/SSQA-for-GI}}
-}
+	author = {Onizawa, Naoya},
+	title = {{SSQA-for-GI}},
+	year = {2023},
+	journal = {GitHub Repository},
+	url = {https://github.com/nonizawa/SSQA-for-GI}
+	}
 ```
 
 ## License
