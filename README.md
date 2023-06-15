@@ -2,54 +2,92 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-SSQA-for-GI is a Python project that utilizes Structured Synthesizer Quality Assessment (SSQA) for Graph Isomorphism (GI) tasks. The project aims to develop a robust algorithm to assess the quality of synthesizers, by evaluating their performance in solving Graph Isomorphism problems.
+SSQA-for-GI is a Python project that utilizes Stochastic Simulated Quantum Annelinag (SSQA) for Graph Isomorphism (GI) tasks. The project aims to develop a robust algorithm to assess the quality of synthesizers, by evaluating their performance in solving Graph Isomorphism problems.
 
 The Graph Isomorphism problem is a classical computational problem in which two given graphs, G and H, are determined to be isomorphic if there exists a bijective mapping between their vertex sets that preserves adjacency.
 
-## Getting Started
+## Table of Contents
+1. [Installation](#installation)
+2. [Run](#single)
+3. [Structure](#structure)
+4. [License](#license)
+5. [Contact](#contact)
+6. [Citation](#citation)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Installation
 
 ### Prerequisites
 
-Ensure you have Python 3.6 or later installed on your machine. You can download it from [here](https://www.python.org/downloads/).
+- Python 3.x
 
-### Installation
-
-1. Clone the repository:
+### Clone the Repository
 
     ```sh
     git clone https://github.com/nonizawa/SSQA-for-GI.git
     cd SSQA-for-GI
     ```
 
-2. The dataset used for evaluating graphs is located at `./graph/`. Make sure that it's in place before running the program.
+## Run
 
-### Running
-
-To run the main script, simply execute the `sa.py` file using Python:
+To run the main script, simply execute the `sa.py` file using Python. For example:
 
 ```sh
-python sa.py
+python sa.py --N 5 --Mcycle 1000 --trial 100 --T_ini 1000 --T_end 0.1 -tau 1
 ```
 
-You can modify the script to perform specific tests or evaluations by editing the parameters within the script.
+Here ia the options.
+
+--N: Number of nodes in a GI problem
+
+--Mcycle: Number of cycles for 1 trial
+
+--trial: Number of trials to evaluate the performance on average
+
+--T_ini:  A pseudo temperature starts at T_ini
+
+--T_min: A pseudo temperature ends at T_ini
+
+--tau:  A pseudo inverse temperature is decreased every tau cycle
 
 ## Structure
 
 - `./graph/`: This directory contains the dataset of graphs used for evaluation.
 - `sa.py`: This is the main Python script that runs the SSQA for GI algorithm.
-- `requirements.txt`: This file contains the Python dependencies necessary for the project.
-- `LICENSE`: The MIT License file for this project.
+- `GI_p50_dataset.mat`" This is dataset of GI problems where edges between nodes exist with 50\%.
+- `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
+- `common.py`: This is used for sa.py 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Contact
 
 For any questions, issues, or inquiries, feel free to create an issue in the repository or contact the repository owner [@nonizawa](https://github.com/nonizawa).
 
---- 
 
-Please note that this README.md is a general guide, and the specifics of the project may vary. It's important to review the repository for the most up-to-date information.
+## Citation
+
+If you use this code in your research, please cite the original paper:
+```bibtex
+@misc{onizawa2023stochastic,
+      title={Stochastic Quantum Monte Carlo Algorithm for Large-Scale Combinatorial Optimization Problems}, 
+      author={Naoya Onizawa and Ryoma Sasaki and Duckgyu Shin and Warren J. Gross and Takahiro Hanyu},
+      year={2023},
+      eprint={2302.12454},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
+
+Here is a bibtex for the code.
+```bibtex
+@misc{nonizawa_SSQAforGI,
+    author = {Naoya Onizawa,
+    title = {SSQA-for-GI},
+    year = {2023},
+    publisher = {GitHub},
+    journal = {GitHub Repository},
+    howpublished = {\url{https://github.com/nonizawa/SSQA-for-GI}}
+}
+```
