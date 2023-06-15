@@ -14,13 +14,16 @@ This repository contains an implementation of the SSQA algorithm to tackle the G
 
 ### Clone the Repository
 
-    ```sh
-    git clone https://github.com/nonizawa/SSQA-for-GI.git
-    cd SSQA-for-GI
-    ```
+```sh
+git clone https://github.com/nonizawa/SSQA-for-GI.git
+cd SSQA-for-GI
+```
 
 ## Run
 
+### SSQA (Stochastic simulated quantum annelinag)
+
+### SA (Taditional SA)
 To run the main script, simply execute the `sa.py` file using Python. For example:
 
 ```sh
@@ -39,12 +42,12 @@ Here ia the options.
 
 --T_min: A pseudo temperature ends at T_ini
 
---tau:  A pseudo inverse temperature is decreased every tau cycle
+--tau:  A pseudo temperature is decreased every tau cycle
 
 ## Structure
 
 - `./graph/`: This directory contains the dataset of graphs used for evaluation.
-- `sa.py`: This is the main Python script that runs the SSQA for GI algorithm.
+- `sa.py`: This is the main Python script that runs the SA for GI algorithm.
 - `GI_p50_dataset.mat`" This is dataset of GI problems where edges between nodes exist with 50\%.
 - `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
 - `common.py`: This is used for sa.py 
