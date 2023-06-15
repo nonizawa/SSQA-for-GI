@@ -19,6 +19,13 @@ git clone https://github.com/nonizawa/SSQA-for-GI.git
 cd SSQA-for-GI
 ```
 
+## Structure
+
+- `sa.py`: This is the main Python script that runs the SA for GI algorithm.
+- `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
+- `./graph/`: This directory contains the dataset of graphs used for evaluation.
+- `GI_p50_dataset.mat`" This is dataset of GI problems where edges between nodes exist with 50\%.
+
 ## Run
 
 ### SSQA (Stochastic simulated quantum annelinag)
@@ -50,14 +57,6 @@ You can see the simulation results in terminal, such as mean simulation time and
 Also, you can see the energy (Hamiltonian) and pesudo temperature (T) versus cycles. For example:
 ![Simulated waveforms](images/waveform.png)
 
-
-## Structure
-
-- `./graph/`: This directory contains the dataset of graphs used for evaluation.
-- `sa.py`: This is the main Python script that runs the SA for GI algorithm.
-- `GI_p50_dataset.mat`" This is dataset of GI problems where edges between nodes exist with 50\%.
-- `convet.py`: This is the Python script that converts GI_p50_dataset.mat to J and h in ./graph.
-- `common.py`: This is used for sa.py 
 
 ## Contact
 
