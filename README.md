@@ -44,6 +44,13 @@ Here ia the options.
 
 --tau:  A pseudo temperature is decreased every tau cycle
 
+You can see the simulation results in terminal, such as mean simulation time and accuracy. For example:
+![Accuracy and simulation time](images/terminal.png)
+
+Also, you can see the energy (Hamiltonian) and pesudo temperature (T) versus cycles. For example:
+![Simulated waveforms](images/waveform.png)
+
+
 ## Structure
 
 - `./graph/`: This directory contains the dataset of graphs used for evaluation.
